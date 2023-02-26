@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Box</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .photos img {
+            width: 8%;
+            aspect-ratio: 3/2;
+            object-fit: contain;
+            mix-blend-mode: color-burn;
+        }
+
+        .photos {
+            background: #dfdfdf;
+            padding: 50px;
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        Instagram
+        @webdesignuniversity
+        12 Febrero 2023
+        
+        Aquí tienes tres consejos sobre CSS. Así que tengo estos logos alineados aquí.
+        Algunas tienen fondo blanco. No están alineados. Este es super alto. Es un poco molesto.
+        Lo que quiero hacer es que todos tengan la misma altura pero un 15% de anchura.
+        Podemos utilizar aspect-ratio CSS para hacerlos algo así como 3/2 y que les dará a todos la misma anchura y altura en función de su ancho de fluido.
+        Ahora están estirados. ¿Cómo lo solucionamos?
+        Podemos usar object-fit: contain; y eso los contendrá y tiene el agradable beneficio de alinearlos verticalmente también sin ninguna caja flexible.
+        Por fin cómo deshacerse de ese fondo negro.
+        Uh el cliente envió el logo equivocado.
+        Bueno, puedes arreglarlo con mix-blend-mode: color-burn; y eso eliminará cualquier fondo blanco que haya sobre los logotipos negros.
+     -->
+
+    <div class="photos">
+        <img src="https://logodownload.org/wp-content/uploads/2014/10/vans-logo-1-1.png" alt="Vans">
+        <img src="https://www.pngmart.com/files/4/Nike-Logo-PNG-Pic.png" alt="Nike">
+        <img src="https://www.pngplay.com/wp-content/uploads/6/Adidas-Black-Logo-PNG-Clipart-Background.png" alt="Adidas">
+        <img src="https://1000marcas.net/wp-content/uploads/2020/01/Converse-Logo-2003.png" alt="Converse">
+        <img src="https://1000marcas.net/wp-content/uploads/2019/12/PUMA-logo.jpg" alt="Puma">
+    </div>
+    
+</body>
+</html>
